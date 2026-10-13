@@ -1,0 +1,17 @@
+pas = input("Enter a password: ")
+founduppercase = False
+foundlowercase = False
+founddigit = False
+
+for ch in pas:
+    if ch.isupper():
+        founduppercase = True
+    elif ch.islower():
+        foundlowercase = True
+    elif ch.isdigit():
+        founddigit = True
+
+if founddigit and foundlowercase and founduppercase and len(pas) >= 8:
+    print("Valid")
+else:
+    print("Invalid")

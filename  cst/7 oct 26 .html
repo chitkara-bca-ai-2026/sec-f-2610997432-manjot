@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h1>Online Course Registration</h1>
+
+    <!-- Task 1: Form with action and target attributes -->
+    <form action="/submit-registration" method="POST" target="_blank">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Task 2 & Task 3: Input types and properly associated labels -->
+            <p>
+                <label for="studentName">Student Name:</label><br>
+                <input type="text" id="studentName" name="studentName" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="tel" id="mobile" name="mobile" required>
+            </p>
+
+            <p>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <!-- Task 4: Gender using radio buttons (sharing the same 'name' attribute) -->
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="genderMale" name="gender" value="Male">
+                <label for="genderMale">Male</label>
+                
+                <input type="radio" id="genderFemale" name="gender" value="Female">
+                <label for="genderFemale">Female</label>
+                
+                <input type="radio" id="genderOther" name="gender" value="Other">
+                <label for="genderOther">Other</label>
+            </p>
+
+            <!-- Task 5: Skills using checkboxes -->
+            <p>
+                <label>Skills:</label><br>
+                <input type="checkbox" id="skillHTML" name="skills" value="HTML">
+                <label for="skillHTML">HTML</label>
+                
+                <input type="checkbox" id="skillCSS" name="skills" value="CSS">
+                <label for="skillCSS">CSS</label>
+                
+                <input type="checkbox" id="skillJS" name="skills" value="JavaScript">
+                <label for="skillJS">JavaScript</label>
+                
+                <input type="checkbox" id="skillPython" name="skills" value="Python">
+                <label for="skillPython">Python</label>
+            </p>
+        </fieldset>
+
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>

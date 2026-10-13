@@ -1,0 +1,38 @@
+cart = []
+running = True
+
+# 1. WHILE LOOP: Keeps the app open
+while running:
+    print("\n--- STORE MENU ---")
+    print("1. Add item")
+    print("2. View cart")
+    print("3. Checkout & Exit")
+    
+    choice = input("Choose an option (1-3): ")
+
+    # 2. IF / ELIF / ELSE: Handles user choice
+    if choice == "1":
+        item = input("Enter item name: ")
+        cart.append(item)
+        print(f"Added '{item}' to cart!")
+
+    elif choice == "2":
+        if len(cart) == 0:
+            print("Your cart is empty!")
+        else:
+            print("\nItems in your cart:")
+            # 3. FOR LOOP: Prints every item in the cart list
+            for item in cart:
+                print(f"- {item}")
+
+    elif choice == "3":
+        print("\nThank you for shopping!")
+        running = False  # Stops the while loop
+
+    else:
+        print("Invalid choice, try again.")
+
+# Final check using FOR loop
+print("\nFinal Purchased Items:")
+for item in cart:
+    print(f"* {item}")
