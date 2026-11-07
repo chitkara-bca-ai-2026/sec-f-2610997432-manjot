@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Horizon Bank</title>
+    <link rel="stylesheet" href="../CSS/about.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            
+            <span class="logo-mark">H</span> Horizon<span>Bank</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About Us</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="login-button" id="loginButton">Log in <span>→</span></button>
+    </header>
+
+    <main>
+        <section class="about-hero section-width">
+            <div class="hero-text">
+                <p class="eyebrow">OUR STORY</p>
+                <h1>A bank that<br><em>looks ahead.</em></h1>
+            </div>
+            <div class="about-intro">
+                <p>Horizon Bank began with one simple idea: banking should help people feel more confident about the future, not confused by it.</p>
+                <p>Today, we combine modern technology and real human support to make sound financial decisions accessible to everyone.</p>
+            </div>
+        </section>
+
+        <section class="story-block section-width">
+            <div class="story-image">
+                <div class="badge-circle">
+                    <span>EST.</span>
+                    <strong>1998</strong>
+                </div>
+            </div>
+            <div class="story-copy">
+                <p class="eyebrow">WHY HORIZON</p>
+                <h2>Progress is better when shared.</h2>
+                <p>We believe a bank should be a steady partner through every stage of life. That means transparent terms, fair products, and advisors who listen before guiding.</p>
+                <p>Our team works daily to create a calmer, more intuitive banking experience for our clients and local communities.</p>
+                <a class="text-button" href="index.html#contact">Start a conversation <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="values section-width">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">WHAT GUIDES US</p>
+                    <h2>Good values. Good business.</h2>
+                </div>
+                <p>Our core principles guide how we explain options, solve problems, and support our customers every day.</p>
+            </div>
+            <div class="value-grid">
+                <article class="value-card">
+                    <span class="card-num">01</span>
+                    <h3>Keep it clear</h3>
+                    <p>No confusing jargon or hidden fees. Just straightforward banking that makes total sense.</p>
+                </article>
+                <article class="value-card">
+                    <span class="card-num">02</span>
+                    <h3>Stay curious</h3>
+                    <p>We continuously innovate, listen to feedback, and build better pathways to financial security.</p>
+                </article>
+                <article class="value-card">
+                    <span class="card-num">03</span>
+                    <h3>Be there</h3>
+                    <p>When life changes direction, our advisors provide fast, personal, and practical assistance.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container section-width">
+            <a class="logo" href="index.html">
+                <span class="logo-mark">H</span> Horizon<span>Bank</span>
+            </a>
+            <p>© 2026 Horizon Bank. Banking for better tomorrows.</p>
+            <a href="index.html" class="back-link">Back home →</a>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">✕</button>
+            <h3>Account Login</h3>
+            <p>Access your secure Horizon Bank account.</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username / Client ID</label>
+                    <input type="text" id="username" placeholder="e.g. user123" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/about.js"></script>
+</body>
+</html>

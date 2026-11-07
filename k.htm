@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Registration</title>
+</head>
+<body>
+
+    <!-- Task 1 & 2: Form with action, method, and h2 heading -->
+    <form action="membership.html" method="post">
+        <h2>Gym Membership Form</h2>
+
+        <!-- Task 3: Full Name field -->
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+        </div>
+
+        <!-- Task 3: Email Address field -->
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <!-- Task 4: Password field -->
+        <div>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <!-- Task 5: Membership Type dropdown -->
+        <div>
+            <label for="membership">Membership Type:</label>
+            <select id="membership" name="membership">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+        </div>
+
+        <!-- Task 6: Morning and Evening radio buttons -->
+        <div>
+            <label>Preferred Time:</label>
+            <input type="radio" id="morning" name="time" value="morning">
+            <label for="morning">Morning</label>
+            
+            <input type="radio" id="evening" name="time" value="evening">
+            <label for="evening">Evening</label>
+        </div>
+
+        <!-- Task 7: Yoga, Cardio, and Weight Training checkboxes -->
+        <div>
+            <label>Interests:</label>
+            <input type="checkbox" id="yoga" name="interests" value="yoga">
+            <label for="yoga">Yoga</label>
+            
+            <input type="checkbox" id="cardio" name="interests" value="cardio">
+            <label for="cardio">Cardio</label>
+            
+            <input type="checkbox" id="weight_training" name="interests" value="weight training">
+            <label for="weight_training">Weight Training</label>
+        </div>
+
+        <!-- Task 8: Preferred Start Date date picker -->
+        <div>
+            <label for="start_date">Preferred Start Date:</label>
+            <input type="date" id="start_date" name="start_date">
+        </div>
+
+        <!-- Task 9: Workout Intensity range slider (1-10) -->
+        <div>
+            <label for="intensity">Workout Intensity:</label>
+            <input type="range" id="intensity" name="intensity" min="1" max="10">
+        </div>
+
+        <!-- Task 10: Submit and Reset buttons -->
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>

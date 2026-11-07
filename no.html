@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Horizon Bank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #090d16; --card: #111827; --accent: #38bdf8; --gold: #f59e0b; --text: #f3f4f6; --muted: #9ca3af; }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+        body { background:var(--bg); color:var(--text); line-height:1.6; }
+        .container { max-width:1100px; margin:0 auto; padding:0 1.5rem; }
+        
+        header { display:flex; justify-size:space-between; justify-content:space-between; align-items:center; padding:1.5rem 0; border-bottom:1px solid #1f2937; }
+        .logo { font-size:1.25rem; font-weight:800; color:var(--text); text-decoration:none; display:flex; gap:0.5rem; align-items:center; }
+        .logo span { color:var(--accent); }
+        nav a { color:var(--muted); text-decoration:none; margin-left:1.5rem; font-size:0.9rem; font-weight:600; transition:0.2s; }
+        nav a:hover, nav a.active { color:var(--accent); }
+        .btn { background:var(--accent); color:#000; font-weight:700; padding:0.5rem 1.25rem; border-radius:8px; border:none; cursor:pointer; }
+        
+        .hero { display:grid; grid-template-columns:1fr 1fr; gap:3rem; padding:5rem 0; align-items:center; }
+        .hero h1 { font-size:3rem; font-weight:800; line-height:1.1; }
+        .hero h1 span { color:var(--gold); }
+        .hero p { color:var(--muted); font-size:1.1rem; }
+        
+       
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin:3rem 0 6rem; }
+        .card { background:var(--card); border:1px solid #1f2937; padding:2rem; border-radius:12px; transition:0.3s; }
+        .card:hover { border-color:var(--accent); transform:translateY(-4px); }
+        .card num { font-size:1.5rem; font-weight:800; color:var(--accent); display:block; margin-bottom:0.5rem; }
+        .card h3 { font-size:1.2rem; margin-bottom:0.5rem; }
+        .card p { color:var(--muted); font-size:0.9rem; }
+        
+       
+        footer { text-align:center; padding:2rem 0; border-top:1px solid #1f2937; color:var(--muted); font-size:0.85rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo"><span>H</span> HorizonBank</a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#" class="active">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button class="btn" onclick="alert('Login Portal Opened')">Log in →</button>
+        </header>
+
+        <section class="hero">
+            <div>
+                <p style="color:var(--accent); font-weight:600; font-size:0.85rem; letter-spacing:1px; margin-bottom:0.5rem;">OUR VISION</p>
+                <h1>Banking for <span>Better</span> Tomorrows.</h1>
+            </div>
+            <div>
+                <p>Horizon Bank combines modern technology with trusted human support to deliver clear, fast, and transparent financial growth.</p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <num>01</num>
+                <h3>Clear & Direct</h3>
+                <p>No hidden fees or complex terms. Straightforward financial management built for you.</p>
+            </div>
+            <div class="card">
+                <num>02</num>
+                <h3>Smart Growth</h3>
+                <p>Leveraging cutting-edge technology to give you faster, safer, and smarter returns.</p>
+            </div>
+            <div class="card">
+                <num>03</num>
+                <h3>Human Support</h3>
+                <p>Our dedicated support team is ready 24/7 whenever you need personal assistance.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Horizon Bank. Built for competitive web standards.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
